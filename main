@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class Main {
+  public static void main(String[] args) {
+    double num1, num2, num3;
+    double mean;
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Enter the first number: ");
+    num1 = input.nextDouble();
+    
+    System.out.println("Enter the second number: ");
+    num2 = input.nextDouble();
+    
+    System.out.println("Enter the thrid number: ");
+    num3 = input.nextDouble();
+
+    mean = (num1+num2+num3)/3;
+    System.out.println("The mean of the numbers is: "+mean);
+
+    num1 = (num1-mean)*(num1-mean);
+    num2 = (num2-mean)*(num2-mean);
+    num3 = (num3-mean)*(num3-mean);
+    System.out.println("The standard deviation of each number is: ");
+    System.out.println("num1 :"+num1+" num2: "+num2+" num3: "+num3);
+    
+
+    
+    
+  }
+}
